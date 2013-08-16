@@ -58,11 +58,12 @@ co.year = function(from, to) {
 
 直接输入：
 
-```r
-co.year(1988, 2088)
-```
 
-```
+{% highlight r %}
+co.year(1988, 2088)
+{% endhighlight %}
+
+{% highlight %}
 ## $the.years
 ##  [1] 2013 2014 2015 2016 2017 2018 2019 2031 2034 2035 2036 2037 2038 2039
 ## [15] 2041 2043 2045 2046 2047 2048 2049 2051 2053 2054 2056 2057 2058 2059
@@ -71,24 +72,25 @@ co.year(1988, 2088)
 ## 
 ## $how.many.years.you.will.meet
 ## [1] 48
-```
+{% endhighlight %}
 
 
  
 
 它表示这段时间（1988-2013），是完备年的只有2013年，这段时间只有一次完备年。好，再来看下1980年出生的最大80后的情况：
 
-```r
-co.year(1980, 2013)
-```
 
-```
+{% highlight r %}
+co.year(1980, 2013)
+{% endhighlight %}
+
+{% highlight %}
 ## $the.years
 ## [1] 1980 1982 1983 1984 1985 1986 1987 2013
 ## 
 ## $how.many.years.you.will.meet
 ## [1] 8
-```
+{% endhighlight %}
 
 
 
@@ -108,11 +110,12 @@ co.year(1980, 2013)
 
 如果我能活到2068年（80岁）：
 
-```r
-co.year(1988, 2068)
-```
 
-```
+{% highlight r %}
+co.year(1988, 2068)
+{% endhighlight %}
+
+{% highlight %}
 ## $the.years
 ##  [1] 2013 2014 2015 2016 2017 2018 2019 2031 2034 2035 2036 2037 2038 2039
 ## [15] 2041 2043 2045 2046 2047 2048 2049 2051 2053 2054 2056 2057 2058 2059
@@ -120,14 +123,15 @@ co.year(1988, 2068)
 ## 
 ## $how.many.years.you.will.meet
 ## [1] 34
-```
+{% endhighlight %}
 
 
  
 
 我会遇到34次完备年，很明显，都是在2013年之后。如果用图形表示就是这样：
 
-```r
+
+{% highlight r %}
 from <- 1988
 to <- 2068
 gap <- seq(from, to, by = 1)
@@ -145,7 +149,7 @@ p + geom_line(color = "red4", lwd = 2) + scale_x_continuous(breaks = seq(from,
     to, by = 2), labels = seq(from, to, by = 2)) + scale_y_continuous(breaks = c(0, 
     1), labels = c("NO", "YES")) + theme(axis.text.x = element_text(colour = "black", 
     size = 7)) + labs(x = "年份", y = "是否是完备年", title = "从1988-2068的完备年")
-```
+{% endhighlight %}
 
 [![](http://m2.img.libdd.com/farm5/2013/0101/19/4434B67611DFA67151523B29BD3823D16191E9A692296_3000_1500.jpg)](http://m2.img.libdd.com/farm5/2013/0101/19/4434B67611DFA67151523B29BD3823D16191E9A692296_3000_1500.jpg)
 
@@ -161,11 +165,12 @@ p + geom_line(color = "red4", lwd = 2) + scale_x_continuous(breaks = seq(from,
 
 那如果到2088年（100岁！）：
 
-```r
-co.year(1988, 2088)
-```
 
-```
+{% highlight r %}
+co.year(1988, 2088)
+{% endhighlight %}
+
+{% highlight %}
 ## $the.years
 ##  [1] 2013 2014 2015 2016 2017 2018 2019 2031 2034 2035 2036 2037 2038 2039
 ## [15] 2041 2043 2045 2046 2047 2048 2049 2051 2053 2054 2056 2057 2058 2059
@@ -174,7 +179,7 @@ co.year(1988, 2088)
 ## 
 ## $how.many.years.you.will.meet
 ## [1] 48
-```
+{% endhighlight %}
 
 
 
@@ -182,7 +187,8 @@ co.year(1988, 2088)
 
 
 
-```r
+
+{% highlight r %}
 from <- 1988
 to <- 2088
 gap <- seq(from, to, by = 1)
@@ -200,7 +206,7 @@ p + geom_line(color = "red4", lwd = 2) + scale_x_continuous(breaks = seq(from,
     to, by = 2), labels = seq(from, to, by = 2)) + scale_y_continuous(breaks = c(0, 
     1), labels = c("NO", "YES")) + theme(axis.text.x = element_text(colour = "black", 
     size = 7)) + labs(x = "年份", y = "是否是完备年", title = "从1988-2088的完备年")
-```
+{% endhighlight %}
 
 ![(http://m2.img.libdd.com/farm4/2013/0101/19/2C28AE06920B98F4FF23CA957759100076B33FC6C86F1_3000_1500.jpg)](http://m2.img.libdd.com/farm4/2013/0101/19/2C28AE06920B98F4FF23CA957759100076B33FC6C86F1_3000_1500.jpg) 
 
