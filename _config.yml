@@ -12,12 +12,12 @@ paginate: 5
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : 统计边，生活处
-tagline: Statistics and Life
+title : 有涯度无涯
+tagline: Life for fun
 author :
-  name : gaotao
-  email : joegaotao@gmail.com
-  github : joegaotao
+  name : jianchongsu
+  email : causjc@gmail.com
+  github : jianchongsu
   twitter : username
   feedburner : feedname
 
