@@ -36,7 +36,8 @@ tags:
 
 为了方便，我用R语言编了一个函数，你只需要输入起始年以及终止年，你就可以看到这期间的所有的完备年的年份（代码有需要优化的地方，请随时交流）。
 
-```r
+<!-- more -->
+{% highlight r %}
 library(ggplot2)
 co.year = function(from, to) {
     gap <- seq(from, to, by = 1)
@@ -49,7 +50,7 @@ co.year = function(from, to) {
     year.length <- length(the.year)
     return(list(the.years = the.year, how.many.years.you.will.meet = year.length))
 }
-```
+{% endhighlight %}
 
  
 
@@ -146,7 +147,8 @@ p + geom_line(color = "red4", lwd = 2) + scale_x_continuous(breaks = seq(from,
     size = 7)) + labs(x = "年份", y = "是否是完备年", title = "从1988-2068的完备年")
 ```
 
-![plot of chunk 802 ](figure/802 .png) 
+[![](http://m2.img.libdd.com/farm5/2013/0101/19/4434B67611DFA67151523B29BD3823D16191E9A692296_3000_1500.jpg)](http://m2.img.libdd.com/farm5/2013/0101/19/4434B67611DFA67151523B29BD3823D16191E9A692296_3000_1500.jpg)
+
 
 
 
@@ -200,7 +202,7 @@ p + geom_line(color = "red4", lwd = 2) + scale_x_continuous(breaks = seq(from,
     size = 7)) + labs(x = "年份", y = "是否是完备年", title = "从1988-2088的完备年")
 ```
 
-![plot of chunk 1002 ](figure/1002 .png) 
+![(http://m2.img.libdd.com/farm4/2013/0101/19/2C28AE06920B98F4FF23CA957759100076B33FC6C86F1_3000_1500.jpg)](http://m2.img.libdd.com/farm4/2013/0101/19/2C28AE06920B98F4FF23CA957759100076B33FC6C86F1_3000_1500.jpg) 
 
 
  
