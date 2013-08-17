@@ -18,7 +18,7 @@ R函数介绍：merge()
 ### 函数的用途
 如果两个data frame 有相同的列或者行，你希望将这两个data frame通过他们相同的行或者列组合成一个data frame，新形成的这个data frame有前两个data frame的所有列的信息，只是两个相同的列融合为一个。
 > 融合，合并也是merge单词的本义。
-
+<!-- more -->
 
 ### 函数的参数
 
