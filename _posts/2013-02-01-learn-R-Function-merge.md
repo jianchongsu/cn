@@ -1,5 +1,5 @@
 ---
-date: '2012-10-17 10:45:40'
+date: '2013-02-01 10:45:40'
 layout: post
 title: R函数介绍：merge()
 categories:
